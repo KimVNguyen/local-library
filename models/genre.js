@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var GenreSchema = new Schema(
     {
-        name: {type: String, require: true, min:3, max: 100}
+        name: {type: String, required: true, min:3, max: 100}
 
     }
 )
@@ -15,4 +15,4 @@ GenreSchema
     return '/catalog/genre' + this._id;
 });
 
-modules.exports = modules.exports = mongoose.model('Genre', GenreSchema)
+module.exports = mongoose.model('Genre', GenreSchema)

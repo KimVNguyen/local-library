@@ -11,10 +11,10 @@ var BookInstanceSchema = new Schema(
 );
 
 // Virtual for bookinstance's URL
-BookInstance
+BookInstanceSchema
 .virtual('url')
 .get(function(){
     return '/catalog/bookinstance/' + this._id;
 });
 
-modules.exports = mongoose.model('BookInstance', BookInstanceSchema)
+module.exports = mongoose.model('BookInstance', BookInstanceSchema)

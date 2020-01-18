@@ -1,5 +1,5 @@
 var mongoose = require ('mongoose');
-var schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 var AuthorSchema = new Schema(
     {
         first_name: {type: String, required: true, max:100},
